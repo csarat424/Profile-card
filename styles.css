@@ -1,0 +1,78 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.profile-card {
+    width: 350px;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, #305170, #6DFC6B);
+    position: relative;
+    padding: 20px;
+}
+
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    margin: 0 auto 20px;
+    display: block;
+    object-fit: cover;
+}
+
+.profile-card h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.profile-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.social-media {
+    margin-bottom: 15px;
+}
+
+.social-media a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.hover-content {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.profile-card:hover .hover-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.profile-card:hover .social-media {
+    opacity: 0;
+}
